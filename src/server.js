@@ -3,8 +3,8 @@ const express = require('express')
 const morgan = require('morgan')
 // Importamos nuestro middelware morgan
 
-const characterRoutes = require('./routes/Character.routes')
-const episodeRoutes = require('./routes/Episode.routes')
+const CharacterRoutes = require('./routes/Character.routes')
+const EpisodeRoutes = require('./routes/Episode.routes')
 // Importamos los modulos donde tenemos las rutas de nuestros endpoints
 
 const server = express()
@@ -20,9 +20,9 @@ server.use(morgan('dev'))
 // una de las peticiones que llegan a nuestro servidor. La informacion
 // que devuelve varia dependiendo del parametro que se le pase
 
-server.use('/character', characterRoutes)
+server.use('/character', CharacterRoutes)
 
-server.use('/episode', episodeRoutes)
+server.use('/episode', EpisodeRoutes)
 
 module.exports = server
 // Exportamos nuestra instancia para poder ser usada en el index.js
