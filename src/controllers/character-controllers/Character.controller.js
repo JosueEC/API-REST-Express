@@ -5,10 +5,10 @@
 // Estas funciones van a ser exportadas para que puedan ser usadas
 // en su archivo .routes correspondiente
 
-const findAllCharacters = require('./findAllCharacters')
-const createCharacter = require('./createCharacter')
-const findCharacter = require('./findCharacter')
-const deleteCharacter = require('./deleteCharacter')
+const findAllCharacters = require('./find-all-characters')
+const createCharacter = require('./create-character')
+const findCharacter = require('./find-character')
+const deleteCharacter = require('./delete-character')
 
 export const readAllCharacters = async (req, res) => {
   try {
