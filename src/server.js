@@ -3,8 +3,8 @@ const express = require('express')
 const morgan = require('morgan')
 // Importamos nuestro middelware morgan
 
-const characterRoutes = require('./routes/characters.routes')
-const episodeRoutes = require('./routes/episode.routes')
+const characterRoutes = require('./routes/Character.routes')
+const episodeRoutes = require('./routes/Episode.routes')
 // Importamos los modulos donde tenemos las rutas de nuestros endpoints
 
 const server = express()
