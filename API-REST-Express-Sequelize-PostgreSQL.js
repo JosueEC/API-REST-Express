@@ -85,14 +85,13 @@ HOST=localhost // host o dominio donde esta nuestra BD
 PORT=5432 // Puerto por donde nuestra BD esta a la escucha de peticiones
 BDD=sequelize // Nombre de la BD a la que nos vamos a conectar
 */
-// 10.-Creamos nuestro archivo database.js que contendra toda la
-// toda la configuracion de nuestra BD
+// 10.-Dentro de la carpeta database creamos nuestro archivo database.js
+// que contendra toda la toda la configuracion de nuestra BD
 // -Instancia de la BD que crea la conexion
 // -Funciones .define() que crean las tablas en la BD a partir de
 //  nuestros modelos
 // -Relaciones entre Tablas 1 to 1 | 1 to n | n to n
 /*  database.js */
 
-// CREAMOS LOS CONTROLLERS DE NUESTROS ENDPOINTS
-// 1.- Estas son funciones que responden a peticiones HTTP, las cuales
-// pueden ser del formato CRUD
+// CREAMOS LOS MODELOS CON LOS QUE SE VAN A CREAR NUESTRAS TABLAS EN LA
+// BASE DE DATOS
