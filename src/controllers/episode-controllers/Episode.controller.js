@@ -5,10 +5,9 @@
 // Estas funciones van a ser exportadas para que puedan ser usadas
 // en su archivo .routes correspondiente
 
-const findAllEpisodes = require('./findAllEpisodes')
-
-const createBulkEpisodes = require('./createBulkEpisodes')
-const createEpisode = require('./createEpisode')
+const findAllEpisodes = require('./find-all-episodes')
+const createBulkEpisodes = require('./create-bulk-episodes')
+const createEpisode = require('./create-episode')
 // const findEpisode = require('./findEpisode')
 // const deleteEpisode = require('./deleteEpisode')
 
