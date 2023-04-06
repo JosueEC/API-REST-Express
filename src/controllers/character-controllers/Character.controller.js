@@ -7,7 +7,7 @@
 
 const findAllCharacters = require('./findAllCharacters')
 const createCharacter = require('./createCharacter')
-const findCharacterByID = require('./findCharacterByID')
+const findCharacter = require('./findCharacter')
 const deleteCharacter = require('./deleteCharacter')
 
 export const readAllCharacters = async (req, res) => {
@@ -54,7 +54,7 @@ export const readCharacterByID = async (req, res) => {
   try {
     const { id } = req.params
 
-    const character = await findCharacterByID(id)
+    const character = await findCharacter(id)
     res.status(200).json(character)
   } catch (error) {
     res.status(400).json({ error: error.message })
