@@ -11,19 +11,19 @@ import * as characterController from '../controllers/character.controller'
 const router = Router()
 // Creamos una instancia del modulo Router para poder usar sus funciones
 
-router.get('/', characterController.getProducts)
+router.get('/', characterController.getAllCharacters)
 // Read - Leer
 
-router.post('/', characterController.createProduct)
+router.post('/', characterController.createCharacter)
 // create - crear
 
-router.get('/:characterID', characterController.getProductByID)
+router.get('/:characterID', characterController.getCharacterByID)
 // Read by ID - Leer por ID
 
-router.put('/:characterID', characterController.updateProductByID)
+router.put('/:characterID', characterController.updateCharacterByID)
 // Update by ID - Actualizar por ID
 
-router.delete('/:characterID', characterController.deleteProductByID)
+router.delete('/:characterID', characterController.deleteCharacterByID)
 // Delete by ID - Borrar por ID
 
 // De esta forma es como usamos todas las funciones basicas de un
