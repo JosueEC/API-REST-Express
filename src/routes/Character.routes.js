@@ -2,7 +2,7 @@ import { Router } from 'express'
 // Importamos el modulo Router, el cual nos va a permitir crear rutas
 // o endpoints para las solicitudes que llegan al servidor
 
-import * as characterController from '../controllers/character.controller'
+import * as characterController from '../controllers/character-controllers/Character.controller'
 // Esta es una forma en la que podemos importar todas las funciones
 // del respectivo controller de esta ruta o endpoint, de esta forma
 // podemos acceder a ellas como objeto o tambien podriamos importarlas
@@ -11,13 +11,14 @@ import * as characterController from '../controllers/character.controller'
 const router = Router()
 // Creamos una instancia del modulo Router para poder usar sus funciones
 
-router.get('/', characterController.getAllCharacters)
+// ENDPOINTS PARA /character
+router.get('/', characterController.readAllCharacters)
 // Read - Leer
 
-router.post('/', characterController.createCharacter)
+router.post('/', characterController.createNewCharacter)
 // create - crear
 
-router.get('/:characterID', characterController.getCharacterByID)
+router.get('/:characterID', characterController.readCharacterByID)
 // Read by ID - Leer por ID
 
 router.put('/:characterID', characterController.updateCharacterByID)
